@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Зеркало души</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+    <!--Навигация сайта -->
+    <div class="navbar navbar-inverse navbar-static-top" id="black">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu"> 
+                           <span class="sr-only">Открыть навигацию</span>
+                            <span class="icon-bar green"></span>
+                            <span class="icon-bar green"></span>
+                            <span class="icon-bar green"></span>
+                        </button>
+
+                <img class="navbar-brand" id="logo" alt="Логотип" src="images/logo.svg">
+
+            </div>
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#carousel" class="color"><i class="fa fa-home" aria-hidden="true"></i>
+                    </a></li>
+
+                    <li><a href="#contact" class="color"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle color" data-toggle="dropdown">Карта сайта<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#article1" class="color">Детское зрение</a>
+                            </li>
+                            <li>
+                                <a href="#zagolovok" class="color">Тест</a>
+                            </li>
+                            <li>
+                                <a href="#article3" class="color">Статьи</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#footer1" class="color">О нас</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Конец навигации -->
+
+    <!-- Слайдер -->
+    <div class="container-fluid" style="width: 100%">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carousel" class="carousel slide">
+                    <!-- Индикаторы слайдов -->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Слайды -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/sl1.jpg" class="sl" alt="Изображение">
+                            <div class="carousel-caption">
+                                <h3><em>У доброй души самые красивые глаза.</em></h3>
+
+
+                                <p><a href="#article1" class="btn btn-success">Перейти</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/sl2.jpg" class="sl" alt="Изображение">
+                            <div class="carousel-caption">
+                                <h3><em>Самое прекрасное &mdash; смотреть в глаза человеку, который улыбается. У каждого глаза &laquo;улыбаются&raquo; по-своему. И именно улыбающиеся глаза самые прекрасные.</em></h3>
+                                <p><a href="#article3" class="btn btn-success">Перейти</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/sl3.jpg" class="sl" alt="Изображение">
+                            <div class="carousel-caption">
+                                <h3><em>…язык может скрыть истину, а глаза &mdash; никогда.</em></h3>
+                                <p><a href="#contact" class="btn btn-success">Перейти</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелки переключения слайдов -->
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+
+                    <a href="#carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="main">Глаза - зеркало души...</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Аккардион -->
+
+    <div class=container-fluid style="background-color: black;">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 id="article1">Детское зрение</h3>
+                            <h4 class="panel-title">
+                                <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Особенности детского зрения</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Когда мы говорим, что дети – цветы жизни, мы имеем в виду не только то, что они украшают наше существование, наполняют его особым смыслом, гордостью и радостью. Мы подразумеваем также, что дети, как и цветы, – создания
+                                    хрупкие, беззащитные, поэтому нуждаются в особой заботе, в бережном обращении и внимании. И в первую очередь наша забота должна быть направлена на сохранение и поддержание их здоровья.</p>
+                                <p>Строение детских глазок имеет свои особенности. У младенцев глазные яблоки более короткие, поэтому лучи света фокусируются не на сетчатке, а за ней. Иными словами, практически каждый малыш рождается с дальнозоркостью. Это
+                                    совершенно нормально и не говорит о том, что у ребенка проблемы со зрением – в течение первого года жизни глазные яблоки интенсивно растут. К 3-5 годам их развитие завершается, и врожденная дальнозоркость исчезает.
+                                    Однако именно в этот период оптическая система глаз отличается повышенной уязвимостью и требует особого внимания со стороны родителей, поэтому необходимо тщательно дозировать зрительные нагрузки. Это значит, что нужно
+                                    ограничивать разумными рамками время, потраченное ребенком на занятия, которые связаны со зрительным напряжением: рисование, чтение, просмотр телевизионных передач, компьютерные игры.</p>
+                                <div>
+                                    <a href="#spoiler-1" data-toggle="collapse" class="btn btn-success btn-block">Подробнее..</a>
+                                    <div class="collapse" id="spoiler-1">
+                                        <div class="well">
+                                            <p>Подробнее со статьёй можно ознакомиться <a class="btn btn-success btn-xs" href="http://www.proglaza.com/children_vision" title="Сайт proglaza.com">здесь</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Дети и телевизор</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Очень важно грамотно построить &laquo;общение&raquo; ребенка с телевизором. Есть несколько простых правил:</p>
+                                <ol>
+                                    <li>Смотреть телевизор нужно только сидя, желательно в удобном кресле.</li>
+                                    <li>Экран должен быть расположен точно перед ребенком. Ни в коем случае нельзя допускать, чтобы малыш смотрел на экран сбоку.</li>
+                                    <li>В вечернее время необходимо дополнительное освещение в комнате. Если утром или днем в комнату проникает яркий солнечный свет, а телевизор стоит таким образом, что ребенок сидит напротив окна, изображение на экране становится
+                                        плохо различимым, что создает сильную нагрузку на глаза, поэтому шторы лучше немного задернуть.</li>
+                                    <li>Расстояние от глаз до экрана должно быть не менее трех метров, при условии что диагональ экрана составляет 21 дюйм, то есть чуть более 0,5 м. Чем больше экран, тем дальше от него нужно посадить ребенка. При этом тип
+                                        экрана – обычный, плоский, жидкокристаллический, плазменный – не имеет особого значения.</li>
+                                </ol>
+                                <p>Для детей до 5-7 лет также не рекомендовано длительное времяпрепровождение у компьютера – не более 1,5 часов в день. Более старшим детям при работе на компьютере необходимы 10-15 минут отдыха на каждый час «глазения» в
+                                    монитор. Помимо этого, нужно удостовериться, что компьютерный экран имеет слой, защищающий глаза от излучения.</p>
+                                <div>
+                                    <a href="#spoiler-2" data-toggle="collapse" class="btn btn-success btn-block">Подробнее..</a>
+                                    <div class="collapse" id="spoiler-2">
+                                        <div class="well">
+                                            <p>Подробнее со статьёй можно ознакомиться <a class="btn btn-success btn-xs" href="http://www.proglaza.com/child_and_tv" title="Сайт proglaza.com">здесь</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Как сохранить зрение ребенка?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>К сожалению, развитие зрительных дефектов, ведущих к снижению зрения, в большинстве случаев происходит постепенно и без ярко выраженных симптомов. Ребенок, особенно маленький, не в состоянии понять, что нечеткие очертания
+                                    предметов являются главным сигналом тревоги. К тому же, дети обычно не жалуются на заболевания, которые не причиняют болезненных ощущений или дискомфорта. Родители же начинают замечать неладное только тогда, когда патология
+                                    уже находится на зрелой стадии, а это значительно затрудняет лечение и повышает риск необратимого снижения остроты зрения. Именно поэтому офтальмологи рекомендуют взять за правило ежегодную проверку детского зрения
+                                    &mdash; это поможет своевременно диагностировать сбои в зрительной системе на ранней стадии.</p>
+                                <p>Помимо ежегодного обследования, родителям следует внимательно присматриваться к ребенку &mdash; его поведение может подсказать о зарождающихся проблемах со зрением. Если малыш щурится, глядя на удаленные предметы, если
+                                    он низко склоняется над столом, когда читает или рисует, часто спотыкается и роняет предметы, старается сесть ближе к телевизору, постоянно склоняет головку набок, тянется к удаленному предмету, а взяв его в руки, теряет
+                                    к нему интерес, если его глаза часто слезятся &mdash; все это говорит о необходимости посещения офтальмолога.</p>
+                                <p>Одним словом, родителям важно помнить, что лечение любых глазных заболеваний и патологий будет гораздо эффективнее, если вовремя заметить надвигающиеся проблемы со зрением.</p>
+                                <div>
+                                    <a href="#spoiler-3" data-toggle="collapse" class="btn btn-success btn-block">Подробнее..</a>
+                                    <div class="collapse" id="spoiler-3">
+                                        <div class="well">
+                                            <p>Подробнее со статьёй можно ознакомиться <a class="btn btn-success btn-xs" href="http://www.proglaza.com/save_child_vision" title="Сайт proglaza.com">здесь</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Модальное окно размещение -->
+            <div class="col-md-6 col-sm-12">
+                <h3 id="zagolovok">Дальтонизм</h3>
+                <div class="test"><img src="images/test.jpg" alt="Картинка для теста"></div>
+                <div style=" color: #a0a3a4">
+                    <p>Дальтонизм или по другому - цветовая слепота, как правило, наследственное или гораздо реже приобретённое заболевание органа зрения, которое выражается в нарушении нормального восприятие цвета.</p>
+
+                    <p>По статистике, чаще всего данной болезни подвержены мужчины. Чтобы выяснить, есть ли у вас эта аномалия, нужно провести специальное тестирование. Это имеет большое значение, если у вас в планах приобретение и вождение автомобиля.</p>
+                    <p>Однако, следует заметить, что таблицы Рабкина признаны во всём мире и наиболее совершенны из всех существующих тестов, определяющих дальтонизм. Они достоверно устанавливают вид и степень изменения цветового восприятия.</p>
+
+                    <p>Тем не менее, при выявленных вами отклонениях зрения онлайн, рекомендуем записаться на приём к специалисту, для окончательного установления диагноза. Будьте здоровы!</p>
+
+
+                </div>
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modal-1">Открыть тест на цветовосприятие</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Разметка модального окна -->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Тест</h2>
+                    <!-- Кнопка закрытия, крестик -->
+
+                    <!-- Содержание модального окна -->
+                </div>
+                <div class="modal-body">
+
+
+                    <!-- Вступление -->
+
+                    <p>В современной офтальмологии выявляют дальтонизм (цветовую слепоту) и его проявления применяя тест с полихроматическими таблицами Рабкина. Таблицы представляют собой своеобразные рисунки, где изображены точки и круги разного цвета и
+                        диаметра. При наличии дальтонизма человек без проблем может различить яркость цвета, но сам цвет охарактеризовать ему сложно. Схема Рабкина учитывает эти особенности - яркость значков одинаковая, а цвет различается. Человек с отклонением
+                        в восприятии цвета не увидит скрытое в другом цвете изображение в схеме.</p>
+                    <h3>Условия проведения теста на цветовосприятие:</h3>
+                    <ul>
+                        <li>Исследование необходимо проводить при естественном освещении и нормальном самочувствии обследуемого.</li>
+                        <li>Пациент должен сидеть спиной к окну, а тот, кто проводит тестирование - напротив.</li>
+                        <li>Полихроматические таблицы нужно предъявлять вертикально, на одном уровне с глазами, выдерживать расстояние в 1 метр.</li>
+                        <li>На просмотр картинки и ответ отводится около 5 - 7 секунд.</li>
+                    </ul>
+
+                    <h3>Что Вы видите на картинке?</h3>
+
+                    <!-- Основная часть - тест -->
+
+
+                    <!-- Тестовое задание 1 -->
+                    <div class="align"><img src="images/test/1.jpg" alt="картиночка">
+
+                        <div>
+                            <a href="#spoiler-4" data-toggle="collapse" class="btn btn-success">Посмотреть ответ</a>
+                        </div>
+                        <div class="collapse" id="spoiler-4">
+                            <div class="well">
+                                <p>На таблице изображено число &laquo;96&raquo;, которое отлично распознают как люди с заболеванием дальтонизм, так и люди с нормальным зрением. Цель - наглядно показать обследуемому, что именно нужно делать во время прохождения
+                                    теста.
+                                </p>
+
+                                <p><strong><em>Пройти тест до конца и узнать результаты можно на 
+                                    <br>
+                                    <a href="http://moezrenie.com/poleznoe/testy/na-tsvetovospriyatie.html" title="Сайт moezrenie.com" class="link">этом сайте</a></em></strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Основная часть -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup" id="article3">
+                <div class="view view-second">
+                    <img src="images/img/img1.jpg" alt="Картиночка">
+                    <div class="mask"></div>
+                    <div class="content">
+                        <h2>Болезни глаз</h2>
+                        <p>Здесь можно узнать о заболеваниях глаз.</p>
+                        <a href="http://ozrenii.com/category/bolezni-glaz" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт ozrenii.com">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-first">
+                    <img src="images/img/img2.jpg" alt="Картиночка">
+                    <div class="mask">
+                        <h2>Подбор очков</h2>
+                        <p>Здесь научат как подобрать очки по форме лица.</p>
+                        <a href="http://leqend-optika.ru/poleznaya-informaciya/podbiraem-ochki-pod-tip-lica/" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт leqend-optika.ru">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-second">
+                    <img src="images/img/img3.jpg" alt="Картиночка">
+                    <div class="mask"></div>
+                    <div class="content">
+                        <h2>Значение глаз</h2>
+                        <p>Зависит ли характер от
+                            <br>цвета глаз?
+                        </p>
+                        <a href="http://moezrenie.com/poleznoe/znachenie-glaz.html" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт moezrenie.com">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-first">
+                    <img src="images/img/img4.jpg" alt="Картиночка">
+                    <div class="mask">
+                        <h2>Глаза и компьютер</h2>
+                        <p>Статья расскажет о том, как защитить глаза при длительной работе за компьютером.</p>
+                        <a href="http://moezrenie.com/poleznoe/stati/bolyat-glaza-ot-kompyutera.html" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт moezrenie.com">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-first">
+                    <img src="images/img/img5.jpg" alt="Картиночка">
+                    <div class="mask">
+                        <h2>Диагностика</h2>
+                        <p>Несколько простых тестов для проверки зрения.</p>
+                        <a href="http://moezrenie.com/poleznoe/testy/proverka-zreniya.html" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт moezrenie.com">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-second">
+                    <img src="images/img/img6.jpg" alt="Картиночка">
+                    <div class="mask"></div>
+                    <div class="content">
+                        <h2>Солнечные очки</h2>
+                        <p>Всё, что нужно знать о солнцезащитных очках</p>
+                        <a href="http://hnb.com.ua/articles/s-otdyh-vse_chto_nuzhno_znat_o_solntsezashchitnykh_ochkakh-4578" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт hnb.com.ua">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-first">
+                    <img src="images/img/img7.jpg" alt="Картиночка">
+                    <div class="mask">
+                        <h2>Очки-тренажёры</h2>
+                        <p>Кому нужны очки-тренажёры и как их правильно применять?</p>
+                        <a href="http://zreniemed.ru/ochki/trenazhery.html" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт zreniemed.ru">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 otstup">
+                <div class="view view-second">
+                    <img src="images/img/img8.jpg" alt="Картиночка">
+                    <div class="mask"></div>
+                    <div class="content">
+                        <h2>Мультифокальные очки</h2>
+                        <p>Что это такое, какие они бывают, их плюсы и минусы.</p>
+                        <a href="http://zreniemed.ru/linzy/multifokalnye-linzy.html" class="info" data-toggle="tooltip" data-placement="bottom" title="Перейти на сайт zreniemed.ru">Читать статью</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Конец основной части -->
+
+
+    <!-- Форма начало -->
+    <div class="container-fluid">
+        <section id="contact">
+            <div class="section-content">
+                <h2 class="section-header"><span class="content-header ">Свяжитесь с нами, пожалуйста!</span></h2>
+                <h3>Здесь Вы можете оставить свои данные, а также предложения или замечания.</h3>
+            </div>
+            <div class="contact-section">
+                <div class="container">
+                    <form>
+                        <div class="col-xs-6 col-md-6">
+                            <div class="form-group">
+                                <label>Ваше имя</label>
+                                <input type="text" class="form-control" id="im" placeholder=" Иван">
+                            </div>
+                            <div class="form-group">
+                                <label>Электронная почта</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" ivanov@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Мобильный номер</label>
+                                <input type="tel" class="form-control" id="telephone" placeholder=" +375447777777">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div class="form-group">
+                                <label> Сообщение</label>
+                                <textarea class="form-control" id="description" placeholder="Введите текст"></textarea>
+                            </div>
+                            <div>
+
+                                <button type="button" class="btn btn-default btn-xs submit" data-toggle="modal" data-target="#modal-2"><i class="fa fa-paper-plane"></i>Отправить</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Форма - конец -->
+
+
+    <!-- Группа кнопок -->
+    <div class="container">
+        <div class="row">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-2"><i class="fa fa-vk" aria-hidden="true"></i>  ВКонтакте</a>
+                    <a href="#" class="btn btn-warning btn-group-justified" data-toggle="modal" data-target="#modal-2"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>  Одноклассники</a>
+                    <a href="#" class="btn btn-info btn-group-justified" data-toggle="modal" data-target="#modal-2"><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Разметка модального окна -->
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Внимание!</h2>
+                    <!-- Кнопка закрытия, крестик -->
+
+                    <!-- Содержание модального окна -->
+                </div>
+                <div class="modal-body">
+
+                    <!-- Основная часть - тест -->
+                    <p>К сожалению, в настоящий момент <strong>действие невозможно.</strong> Попробуйте позже.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" type="button" data-dismiss="modal">O.K.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Футер - начало -->
+    <footer>
+        <div class="container" id="footer1">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footerleft ">
+                    <p>Этот сайт был создан исключительно в учебных целях, поэтому использовалось много внешних ресурсов, на которые даны ссылки.</p>
+                    <p><i class="fa fa-map-pin"></i> Мы находимся по адресу: ул. Несуществующая 7-7</p>
+                    <p><i class="fa fa-phone"></i> Наш номер : +375 00 0000000</p>
+                    <p><i class="fa fa-envelope"></i> E-mail : some@mail.ru</p>
+
+                </div>
+                <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                    <h6 class="heading7">Информация взята с:</h6>
+                    <ul class="footer-ul">
+                        <li><a href="http://ozrenii.com/category/bolezni-glaz" title="Ссылка на сайт"> ozrenii.com</a></li>
+                        <li><a href="http://leqend-optika.ru/poleznaya-informaciya/podbiraem-ochki-pod-tip-lica/" title="Ссылка на сайт"> leqend-optika.ru</a></li>
+                        <li><a href="http://moezrenie.com/poleznoe/znachenie-glaz.html" title="Ссылка на сайт"> moezrenie.com</a></li>
+                        <li><a href="http://hnb.com.ua/articles/s-otdyh-vse_chto_nuzhno_znat_o_solntsezashchitnykh_ochkakh-4578" title="Ссылка на сайт"> hnb.com.ua</a></li>
+                        <li><a href="http://zreniemed.ru/linzy/multifokalnye-linzy.html" title="Ссылка на сайт"> zreniemed.ru</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                    <h6 class="heading7">При создании использовались:</h6>
+                    <div class="post">
+                        <p>Фреймворк <span>Bootstrap 3</span></p>
+                        <p>Библиотека <span>jQuery</span></p>
+                        <p>Иконки <span>Font Awesome</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer start from here-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="col-md-6">
+                <p>&copy; 2017 - Все права защищены</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="bottom_ul">
+                    <li><a href="#footer1">О нас</a></li>
+                    <li><a href="#contact">Обратная связь</a></li>
+                    <li><a href="#black">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Футер - конец -->
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
